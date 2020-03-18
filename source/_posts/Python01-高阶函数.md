@@ -1,8 +1,10 @@
 ---
-title: 'Python01:高阶函数'
+title: 'Python01-高阶函数'
 date: 2020-03-17 21:03:19
 tags:
 - python
+categories:
+- python学习
 ---
 
 ### map函数
@@ -15,7 +17,7 @@ def f(x):
 r=map(f,[1,2,3,4,5])
 list(r)
 
-output:çç
+output:
 [1,4,9,16,25]
 ```
 
@@ -33,7 +35,7 @@ output:
 25
 ```
 
-#### 练习1：
+练习1：
 
 利用map和reduce编写一个str2float函数，把字符串'123.456'转换成浮点数123.456：
 
@@ -91,7 +93,7 @@ list(filter(not_empty, ['A', '', 'B', None, 'C', '  ']))
 
 可见用filter()这个高阶函数，关键在于正确实现一个“筛选”函数。
 
-练习：
+练习2：
 
 回数是指从左向右读和从右向左读都是一样的数，例如12321，909。请利用filter()筛选出回数：
 
@@ -129,7 +131,7 @@ sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True)
 ['Zoo', 'Credit', 'bob', 'about']
 ```
 
-练习：
+练习3：
 
 ```python
 #请用sorted()对下述列表分别按名字排序
