@@ -11,7 +11,7 @@ categories:
 这里用中科大的，另外还有清华的可用
 
 ### 切换
-```shell
+```bash
 # 步骤一
 cd "$(brew --repo)"
 git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
@@ -29,7 +29,7 @@ brew update
 更新完后使用brew update，brew install速度变快很多了，不会卡在那半天没动静，替换镜像完成。
 
 ### 复原
-```shell
+```bash
 cd "$(brew --repo)"
 git remote set-url origin https://github.com/Homebrew/brew.git
 
